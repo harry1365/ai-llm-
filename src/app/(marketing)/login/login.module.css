@@ -12,12 +12,13 @@
 }
 
 .loginCard {
-  padding: 3rem 2rem;
-  text-align: center;
+  padding: 3.5rem 3rem;
+  text-align: left;
 }
 
 .header {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .header h1 {
@@ -30,39 +31,105 @@
   font-size: 0.95rem;
 }
 
-.actions {
+.form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
-.roleBtn {
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
+  transform: translateY(-1px);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.checkboxGroup {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 1.25rem 1.5rem;
-  gap: 1.5rem;
-  width: 100%;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  cursor: pointer;
 }
 
-.btnIcon {
-  font-size: 1.8rem;
-}
-
-.btnText {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.btnText strong {
-  font-size: 1.1rem;
-}
-
-.btnText span {
-  font-size: 0.8rem;
-  text-transform: none;
-  font-weight: 400;
+.forgotPass {
+  color: var(--accent-color);
   opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
+
+.forgotPass:hover {
+  opacity: 1;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.link {
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
