@@ -1,0 +1,46 @@
+{
+  "flights": [
+    {
+      "id": "f1",
+      "departureCity": "New York (JFK)",
+      "arrivalCity": "London (LHR)",
+      "departureTime": "2026-06-15T18:00:00Z",
+      "arrivalTime": "2026-06-16T06:00:00Z",
+      "price": 15000,
+      "aircraftModel": "Gulfstream G650",
+      "availableSeats": 7
+    },
+    {
+      "id": "f2",
+      "departureCity": "Los Angeles (LAX)",
+      "arrivalCity": "Tokyo (HND)",
+      "departureTime": "2026-06-20T10:00:00Z",
+      "arrivalTime": "2026-06-21T14:00:00Z",
+      "price": 25000,
+      "aircraftModel": "Bombardier Global 7500",
+      "availableSeats": 12
+    },
+    {
+      "id": "f3",
+      "departureCity": "Miami (MIA)",
+      "arrivalCity": "Dubai (DXB)",
+      "departureTime": "2026-07-05T20:00:00Z",
+      "arrivalTime": "2026-07-06T18:00:00Z",
+      "price": 35000,
+      "aircraftModel": "Dassault Falcon 8X",
+      "availableSeats": 10
+    }
+  ],
+  "reservations": [
+    {
+      "id": "d74ed316-3778-4082-a837-dd515b4b877d",
+      "flightId": "f1",
+      "passengerName": "Hash",
+      "email": "some@gmaic.com",
+      "seatsBooked": 1,
+      "totalPrice": 15000,
+      "bookingDate": "2026-05-04T07:14:44.989Z"
+    }
+  ],
+  "inquiries": []
+}

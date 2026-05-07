@@ -1,0 +1,10 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us | AeroReserve',
+  description: 'Contact AeroReserve for custom charter inquiries and bespoke travel itineraries.',
+};
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
+}

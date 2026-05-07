@@ -1,0 +1,68 @@
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--nav-height) - 4rem);
+  padding: 2rem;
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 500px;
+}
+
+.loginCard {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.roleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 1.25rem 1.5rem;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.btnIcon {
+  font-size: 1.8rem;
+}
+
+.btnText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.btnText strong {
+  font-size: 1.1rem;
+}
+
+.btnText span {
+  font-size: 0.8rem;
+  text-transform: none;
+  font-weight: 400;
+  opacity: 0.8;
+}
