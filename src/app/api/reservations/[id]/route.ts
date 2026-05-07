@@ -3,8 +3,9 @@ import { deleteReservation } from '@/lib/db';
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   const authSession = request.cookies.get('auth_session');
   
   // Only admins can delete reservations
@@ -13,7 +14,6 @@ export async function DELETE(
   }
 
   try {
-    const id = params.id;
     await deleteReservation(id);
     return NextResponse.json({ success: true });
   } catch (error) {
